@@ -1,0 +1,6 @@
+@Clf.Web.StorefrontApi1_HostAddress = http://localhost:5022
+
+GET {{Clf.Web.StorefrontApi1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
