@@ -4,7 +4,7 @@
     {
         public int AddressId { get; set; }
         public int CustomerId { get; set; }
-        public string AddressType { get; set; }
+        public string AddressType { get; set; } = string.Empty;
         public string Address1 { get; set; } = string.Empty;
         public string City { get; set; } = string.Empty;
         public string StateAbbreviation { get; set; } = string.Empty;
