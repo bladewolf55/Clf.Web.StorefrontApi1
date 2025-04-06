@@ -5,5 +5,6 @@
         public int Number { get; set; }
         public DateTime OrderedOn { get; set; }
 
+        public AddressDto? ShipTo { get; set; }
     }
 }

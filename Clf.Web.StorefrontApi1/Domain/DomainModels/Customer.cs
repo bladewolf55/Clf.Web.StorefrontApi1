@@ -1,18 +1,13 @@
-﻿namespace Clf.Web.StorefrontApi1.Domain.DomainModels;
+﻿using Clf.Web.StorefrontApi1.Domain.DataTransfer;
 
-public class Customer: DataTransfer.CustomerDto
+namespace Clf.Web.StorefrontApi1.Domain.DomainModels;
+
+public class Customer
 {
-    public Address BillingAddress { get; set; } = null!;
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public Address? BillingAddress { get; set; }
     public List<Order> Orders { get; set; } = new();
-
-    public Customer(int id, string name, Address billingAddress, List<Order> orders)
-    {
-        Id = id;
-        Name = name;
-        BillingAddress = billingAddress;
-        Orders = orders;
-    }
-
     public List<string> Validate()
     {
         List<string> errors = new();
