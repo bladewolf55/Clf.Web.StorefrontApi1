@@ -10,7 +10,6 @@ public class CustomerService_Should
 {
     private readonly ILogger<CustomerService> logger;
     private readonly ICustomerRepository customerRepository;
-
     private readonly CustomerService customerService;
 
     public CustomerService_Should()
@@ -24,8 +23,8 @@ public class CustomerService_Should
     public void Get_a_customer()
     {
         // arrange
-        Customer customer = CustomerServiceTestData.CustomerModel;
-        CustomerDto customerDto = CustomerServiceTestData.CustomerDtoModel;
+        Customer customer = CustomerServiceTestData.Customer;
+        CustomerDto customerDto = CustomerServiceTestData.CustomerDto;
         customerRepository.GetCustomer(customer.Id).Returns(customerDto);
 
         // act
@@ -39,7 +38,7 @@ public class CustomerService_Should
     public void Throw_if_customer_name_empty()
     {
         // arrange
-        CustomerDto customerDto = CustomerServiceTestData.CustomerDtoModel;
+        CustomerDto customerDto = CustomerServiceTestData.CustomerDto;
         customerDto.Name = "";
         customerRepository.GetCustomer(customerDto.Id).Returns(customerDto);
 

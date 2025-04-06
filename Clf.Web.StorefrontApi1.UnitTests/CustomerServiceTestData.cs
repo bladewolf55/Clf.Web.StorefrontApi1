@@ -6,76 +6,187 @@ namespace Clf.Web.StorefrontApi1.UnitTests;
 
 static internal class CustomerServiceTestData
 {
-    public static Customer CustomerModel
+    // CUSTOMER
+
+    public static CustomerDto CustomerDto
     {
         get
         {
-            int customerId = 1;
-            string customerName = "a";
-            Address billingAddress = new() { AddressType = AddressType.Billing, Address1 = "a1", Address2 = "a2", City = "Denver", State = "CO", Zip = "12345" };
-            Address shippingAddress = new() { AddressType = AddressType.Shipping, Address1 = "s1", Address2 = "s2", City = "Mobile", State = "AL", Zip = "98765" };
-            DateTime orderedOn1 = DateTime.Parse("2025-04-01");
-            DateTime orderedOn2 = DateTime.Parse("2025-04-02");
-            List<Order> orders = new()
+            return new CustomerDto()
             {
-                new Order() { Number = 11, OrderedOn = orderedOn1, ShipTo = shippingAddress },
-                new Order() { Number = 12, OrderedOn = orderedOn2, ShipTo = shippingAddress },
+                Id = 1,
+                Name = "name",
+                BillingAddress = BillingAddressDto,
+                Orders = new List<OrderDto>
+                {
+                    OrderDto1,
+                    OrderDto2,
+                }
             };
-
-            Customer customer = new()
-            {
-                Id = customerId,
-                Name = customerName,
-                BillingAddress = billingAddress,
-                Orders = orders
-            };
-            return customer;
         }
     }
 
-    public static CustomerDto CustomerDtoModel
+    public static Customer Customer
     {
         get
         {
-            var customer = CustomerModel;
-            var customerId = customer.Id;
-            var customerName = customer.Name;
-            var billingAddress = customer.BillingAddress;
-            var shippingAddress = customer.Orders[0].ShipTo;
-            var orders = customer.Orders;
-
-            AddressDto billAddressDto = new()
+            var dto = CustomerDto;
+            return new()
             {
-                AddressType = billingAddress.AddressType,
-                Address1 = billingAddress.Address1,
-                Address2 = billingAddress.Address2,
-                City = billingAddress.City,
-                State = billingAddress.State,
-                Zip = billingAddress.Zip,
+                Id = dto.Id,
+                Name = dto.Name,
+                BillingAddress = BillingAddress,
+                Orders = new()
+                {
+                    Order1,
+                    Order2,
+                }
             };
-            AddressDto shipAddressDto = new()
-            {
-                AddressType = shippingAddress.AddressType,
-                Address1 = shippingAddress.Address1,
-                Address2 = shippingAddress.Address2,
-                City = shippingAddress.City,
-                State = shippingAddress.State,
-                Zip = shippingAddress.Zip,
-            };
-            List<OrderDto> orderDtos = new List<OrderDto>()
-        {
-            new(){Number = orders[0].Number, OrderedOn = orders[0].OrderedOn, ShipTo = shipAddressDto},
-            new(){Number = orders[1].Number, OrderedOn = orders[1].OrderedOn, ShipTo = shipAddressDto},
-
-        };
-            CustomerDto customerDto = new()
-            {
-                Id = customerId,
-                Name = customerName,
-                BillingAddress = billAddressDto,
-                Orders = orderDtos
-            };
-            return customerDto;
         }
     }
+
+    // ADDRESS
+
+    public static AddressDto BillingAddressDto { get
+        {
+            return new AddressDto()
+            {
+                Address1 = "billing address 1",
+                Address2 = "billing address 2",
+                City = "Denver",
+                State = "CO",
+                Zip = "80201"
+            };
+        }
+    }
+
+    public static Address BillingAddress
+    {
+        get 
+        {
+            var dto = BillingAddressDto;
+            return new Address()
+            {
+                AddressType = dto.AddressType,
+                Address1 = dto.Address1,
+                Address2 = dto.Address2,
+                City = dto.City,
+                State = dto.State,
+                Zip = dto.Zip
+            };
+        }
+    }
+
+    public static AddressDto ShippingAddressDto1
+    {
+        get
+        {
+            return new AddressDto()
+            {
+                Address1 = "shipping address 1",
+                Address2 = "shipping address 2",
+                City = "Ponca City",
+                State = "OK",
+                Zip = "74601"
+            };
+        }
+    }
+
+   public static Address ShippingAddress1 { get
+        {
+            var dto = ShippingAddressDto1;
+            return new Address()
+            {
+                AddressType = dto.AddressType,
+                Address1 = dto.Address1,
+                Address2 = dto.Address2,
+                City = dto.City,
+                State = dto.State,
+                Zip = dto.Zip
+            };
+        } 
+    }
+
+    public static AddressDto ShippingAddressDto2
+    {
+        get
+        {
+            return new AddressDto()
+            {
+                Address1 = "shipping address 1",
+                Address2 = "shipping address 2",
+                City = "Pocatello",
+                State = "ID",
+                Zip = "83201"
+            };
+        }
+    }
+    
+    public static Address ShippingAddress2 { get
+        {
+            var dto = ShippingAddressDto2;
+            return new Address()
+            {
+                AddressType = dto.AddressType,
+                Address1 = dto.Address1,
+                Address2 = dto.Address2,
+                City = dto.City,
+                State = dto.State,
+                Zip = dto.Zip
+            };
+        } }
+
+    // ORDER
+
+    public static OrderDto OrderDto1 { get
+        {
+            return new OrderDto()
+            {
+                Number = 101,
+                OrderedOn = DateTime.Parse("2025-04-01"),
+                ShipTo = ShippingAddressDto1,
+            };
+        }
+    }
+
+    public static Order Order1
+    {
+        get
+        {
+            var dto = OrderDto1;
+            return new Order()
+            {
+                Number = dto.Number,
+                OrderedOn = dto.OrderedOn,
+                ShipTo = ShippingAddress1
+            };
+        }
+    }
+    public static OrderDto OrderDto2
+    {
+        get
+        {
+            return new OrderDto()
+            {
+                Number = 102,
+                OrderedOn = DateTime.Parse("2025-04-02"),
+                ShipTo = ShippingAddressDto2,
+            };
+        }
+    }
+
+    public static Order Order2
+    {
+        get
+        {
+            var dto = OrderDto2;
+            return new Order()
+            {
+                Number = dto.Number,
+                OrderedOn = dto.OrderedOn,
+                ShipTo = ShippingAddress2
+            };
+        }
+    }
+
 }
