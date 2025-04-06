@@ -2,5 +2,5 @@
 
 public interface IOrderRepository
 {
-    IEnumerable<DataTransfer.OrderDto> GetCustomerOrders(int customerId);
+   IEnumerable<DataTransfer.OrderDto> GetCustomerOrders(int customerId);
 }

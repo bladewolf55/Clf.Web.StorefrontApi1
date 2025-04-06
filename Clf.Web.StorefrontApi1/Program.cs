@@ -1,5 +1,4 @@
 using Clf.Web.StorefrontApi1.Data;
-using Clf.Web.StorefrontApi1.Data.Models;
 using Clf.Web.StorefrontApi1.Data.Repositories;
 using Clf.Web.StorefrontApi1.Domain.RepositoryInterfaces;
 using Clf.Web.StorefrontApi1.Domain.Services;
@@ -9,8 +8,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<SqlDbContext>(options => 
-{ 
+builder.Services.AddDbContext<SqlDbContext>(options =>
+{
     options.UseSqlServer("Server=localhost;Database=Storefront;Trusted_Connection=True;TrustServerCertificate=True");
 });
 
@@ -29,7 +28,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger(options => 
+    app.UseSwagger(options =>
     options.OpenApiVersion = Microsoft.OpenApi.OpenApiSpecVersion.OpenApi2_0);
     app.UseSwaggerUI();
 }

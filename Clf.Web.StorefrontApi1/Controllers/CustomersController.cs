@@ -25,7 +25,7 @@ public class CustomersController : ControllerBase
         {
             return customerService.GetCustomer(customerId);
         }
-        catch (Exception ex) 
+        catch (Exception ex)
         {
             var msg = ex.GetBaseException().Message;
             logger.LogError(ex, msg);

@@ -1,6 +1,5 @@
 ﻿using Clf.Web.StorefrontApi1.Domain.DataTransfer;
 using Clf.Web.StorefrontApi1.Domain.DomainModels;
-using Microsoft.AspNetCore.Http;
 
 namespace Clf.Web.StorefrontApi1.UnitTests;
 

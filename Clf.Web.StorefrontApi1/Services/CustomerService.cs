@@ -1,10 +1,9 @@
-﻿using Clf.Web.StorefrontApi1.Domain.RepositoryInterfaces;
+﻿using Clf.Web.StorefrontApi1.Domain.DataMapping;
 using Clf.Web.StorefrontApi1.Domain.DomainModels;
+using Clf.Web.StorefrontApi1.Domain.RepositoryInterfaces;
 using Clf.Web.StorefrontApi1.Domain.Services;
-using Clf.Web.StorefrontApi1.Domain.DataMapping;
 
 namespace Clf.Web.StorefrontApi1.Services;
-
 public class CustomerService : ICustomerService
 {
     private readonly ILogger<CustomerService> logger;
@@ -32,7 +31,7 @@ public class CustomerService : ICustomerService
             logger.LogError($"{nameof(CustomerService)} {nameof(GetCustomer)} {msg}");
             throw new Exception(msg);
         }
-        
+
         return customer;
     }
 }

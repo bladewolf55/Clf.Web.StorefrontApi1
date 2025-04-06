@@ -1,10 +1,6 @@
 ﻿using Clf.Web.StorefrontApi1.Domain.DataMapping;
-using Clf.Web.StorefrontApi1.Domain.DataTransfer;
-using Clf.Web.StorefrontApi1.Domain.DomainModels;
-using Xunit;
 
 namespace Clf.Web.StorefrontApi1.UnitTests;
-
 public class DataMapping_Should
 {
     [Fact]

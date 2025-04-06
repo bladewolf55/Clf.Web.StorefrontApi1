@@ -1,5 +1,4 @@
 ﻿namespace Clf.Web.StorefrontApi1.Domain.DomainModels;
-
 public class Order
 {
     public int Number { get; set; }

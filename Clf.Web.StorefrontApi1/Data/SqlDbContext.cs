@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Clf.Web.StorefrontApi1.Data;
 
-public class SqlDbContext: DbContext
+public class SqlDbContext : DbContext
 {
-    public DbSet<Address> Addresses {  get; set; }
+    public DbSet<Address> Addresses { get; set; }
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Order> Orders { get; set; }
 
@@ -84,12 +84,12 @@ public class SqlDbContext: DbContext
             CustomerId = 1,
             CustomerName = "Pequod"
         };
-        return new() { customer};
+        return new() { customer };
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-       
+
         return;
         optionsBuilder.UseSeeding((context, _) =>
         {

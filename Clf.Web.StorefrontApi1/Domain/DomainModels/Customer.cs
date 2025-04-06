@@ -1,7 +1,4 @@
-﻿using Clf.Web.StorefrontApi1.Domain.DataTransfer;
-
-namespace Clf.Web.StorefrontApi1.Domain.DomainModels;
-
+﻿namespace Clf.Web.StorefrontApi1.Domain.DomainModels;
 public class Customer
 {
     public int Id { get; set; }

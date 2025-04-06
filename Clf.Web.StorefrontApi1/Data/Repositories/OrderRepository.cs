@@ -35,6 +35,6 @@ public class OrderRepository : IOrderRepository
             }
         });
 
-        return dto;        
+        return dto;
     }
 }
