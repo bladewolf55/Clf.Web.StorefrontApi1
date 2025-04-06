@@ -5,19 +5,20 @@ namespace Clf.Web.StorefrontApi1.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class CustomerController : ControllerBase
+public class CustomersController : ControllerBase
 {
-    private readonly ILogger<CustomerController> logger;
+    private readonly ILogger<CustomersController> logger;
     private ICustomerService customerService;
 
-    public CustomerController(ILogger<CustomerController> logger, ICustomerService customerService)
+    public CustomersController(ILogger<CustomersController> logger, ICustomerService customerService)
     {
         this.logger = logger;
         this.customerService = customerService;
     }
 
-    [HttpGet(Name = "GetCustomer")]
+    [HttpGet]
     [Route("customerId")]
+    [EndpointName("Customers_GetCustomer")]
     public ActionResult<Domain.DomainModels.Customer> GetCustomer(int customerId)
     {
         try
