@@ -17,8 +17,18 @@ public class CustomerController : ControllerBase
     }
 
     [HttpGet(Name = "GetCustomer")]
-    public IEnumerable<Domain.DomainModels.Customer> GetCustomer()
+    [Route("customerId")]
+    public ActionResult<Domain.DomainModels.Customer> GetCustomer(int customerId)
     {
-        throw new NotImplementedException();
+        try
+        {
+            return customerService.GetCustomer(customerId);
+        }
+        catch (Exception ex) 
+        {
+            var msg = ex.GetBaseException().Message;
+            logger.LogError(ex, msg);
+            return Problem(msg);
+        }
     }
 }

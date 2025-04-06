@@ -3,7 +3,6 @@ using Clf.Web.StorefrontApi1.Domain.DomainModels;
 using Clf.Web.StorefrontApi1.Domain.RepositoryInterfaces;
 using Clf.Web.StorefrontApi1.Services;
 using Microsoft.Extensions.Logging;
-using Xunit;
 
 namespace Clf.Web.StorefrontApi1.UnitTests;
 
