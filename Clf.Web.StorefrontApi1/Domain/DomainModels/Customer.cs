@@ -11,7 +11,7 @@ public class Customer
     public List<string> Validate()
     {
         List<string> errors = new();
-        if (String.IsNullOrEmpty(Name)) errors.Add( "Name required");
+        if (String.IsNullOrEmpty(Name)) errors.Add("Name required");
         if (BillingAddress == null) errors.Add("Billing Address required");
         return errors;
     }
