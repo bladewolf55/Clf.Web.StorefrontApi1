@@ -24,8 +24,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="in"
      inkscape:zoom="1.1792256"
-     inkscape:cx="480.82405"
-     inkscape:cy="251.0122"
+     inkscape:cx="3501.0264"
+     inkscape:cy="527.4648"
      inkscape:window-width="2560"
      inkscape:window-height="1494"
      inkscape:window-x="-11"
@@ -64,9 +64,36 @@
        id="page59"
        margin="0"
        bleed="0" />
+    <inkscape:page
+       x="903.59998"
+       y="0"
+       width="215.89999"
+       height="279.39999"
+       id="page1"
+       margin="0"
+       bleed="0" />
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
     <marker
        style="overflow:visible"
        id="ColoredTriangle"
@@ -501,7 +528,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.04641px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="335.5477"
          y="136.36668"
-         id="tspan79"></tspan><tspan
+         id="tspan79" /><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.04641px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="335.5477"
@@ -511,7 +538,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.04641px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="335.5477"
          y="143.98271"
-         id="tspan60"></tspan><tspan
+         id="tspan60" /><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.04641px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="335.5477"
@@ -531,7 +558,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.04641px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="335.5477"
          y="159.21475"
-         id="tspan61"></tspan><tspan
+         id="tspan61" /><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.04641px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="335.5477"
@@ -1565,5 +1592,149 @@
          x="-165.48091"
          y="89.928757"
          id="tspan177" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="986.67889"
+       y="50.906494"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:0.264583"
+         x="986.67889"
+         y="50.906494">Data (tables) Physical</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="932.65155"
+       y="55.035828"
+       id="text1-4"><tspan
+         sodipodi:role="line"
+         id="tspan1-1"
+         style="stroke-width:0.264583"
+         x="932.65155"
+         y="55.035828">DbContext</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="932.65155"
+         y="61.209454"
+         id="tspan7">ADO.NET</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="932.25122"
+       y="82.582687"
+       id="text1-4-7"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="932.25122"
+         y="82.582687"
+         id="tspan6-2">Data Service</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="932.25122"
+       y="103.19455"
+       id="text1-4-7-3"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="932.25122"
+         y="103.19455"
+         id="tspan6-2-1">Domain Service</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="932.65155"
+       y="123.47118"
+       id="text1-4-7-3-5"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="932.65155"
+         y="123.47118"
+         id="tspan11">API/MVC Controller</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="932.65155"
+         y="129.64481"
+         id="tspan9">Win App Method</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="932.64191"
+       y="150.48936"
+       id="text1-4-7-3-5-0"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="932.64191"
+         y="150.48936"
+         id="tspan12">Web UI (Javascript)</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="932.64191"
+         y="156.66299"
+         id="tspan13">Win App Method</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="986.67889"
+       y="83.275063"
+       id="text1-8"><tspan
+         sodipodi:role="line"
+         id="tspan1-8"
+         style="stroke-width:0.264583"
+         x="986.67889"
+         y="83.275063">Domain Data Models - DTO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="986.67889"
+       y="62.339802"
+       id="text1-8-54"><tspan
+         sodipodi:role="line"
+         id="tspan1-8-31"
+         style="stroke-width:0.264583"
+         x="986.67889"
+         y="62.339802">Data Table Models - DTO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="986.67889"
+       y="103.15199"
+       id="text1-8-5"><tspan
+         sodipodi:role="line"
+         id="tspan1-8-1"
+         style="stroke-width:0.264583"
+         x="986.67889"
+         y="103.15199">Domain Models - Rich</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="987.08887"
+       y="126.73318"
+       id="text1-8-52"><tspan
+         sodipodi:role="line"
+         id="tspan1-8-7"
+         style="stroke-width:0.264583"
+         x="987.08887"
+         y="126.73318">View Models - DTO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.9389px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:0.264583"
+       x="986.67889"
+       y="154.81868"
+       id="text1-8-2"><tspan
+         sodipodi:role="line"
+         id="tspan1-8-3"
+         style="stroke-width:0.264583"
+         x="986.67889"
+         y="154.81868">Local/UI Models - Rich</tspan></text>
+    <path
+       style="fill:#dddddd;stroke:#000000;stroke-width:0.762;stroke-dasharray:none;marker-end:url(#Triangle)"
+       d="m 1060.8233,48.239637 c 0,104.617473 0,104.617473 0,104.617473"
+       id="path14" />
+    <path
+       style="fill:#dddddd;stroke:#000000;stroke-width:0.762;stroke-dasharray:none;marker-end:url(#Triangle)"
+       d="m 1071.4067,155.56303 c 0,-104.617474 0,-104.617474 0,-104.617474"
+       id="path15" />
   </g>
 </svg>
