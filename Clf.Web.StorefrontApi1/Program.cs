@@ -7,17 +7,21 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// DbContexts
 builder.Services.AddDbContext<SqlDbContext>(options =>
 {
     options.UseSqlServer("Server=localhost;Database=Storefront;Trusted_Connection=True;TrustServerCertificate=True");
 });
 
+// Repositories
 builder.Services.AddScoped<IAddressRepository, AddressRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+
+// App Services
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 
+// Other Services
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
